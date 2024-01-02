@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { Props } from './index'
 
-export const Card = styled.div<Props>`
+type PropsNoLegendAndCount = Omit<Props, 'count' | 'legend'>
+
+export const Card = styled.div<PropsNoLegendAndCount>`
   padding: 8px;
   border: 1px solid ${(props) => (props.active ? '#1e90ff' : '#a1a1a1')};
   background-color: ${(props) => (props.active ? '#fff' : '#fcfcfc')};
