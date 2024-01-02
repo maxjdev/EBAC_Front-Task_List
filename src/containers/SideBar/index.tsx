@@ -4,7 +4,7 @@ import * as S from './styles'
 const SideBar = () => (
   <S.Aside>
     <div>
-      <input type="text" placeholder="Search" />
+      <S.Field type="text" placeholder="Search" />
       <S.Filters>
         <FilterCard />
         <FilterCard />
