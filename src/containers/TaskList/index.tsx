@@ -5,20 +5,20 @@ const tasks = [
   {
     title: 'Study Typescript',
     description: 'Watch the class',
-    priority: 'Important',
-    status: 'Done'
+    priority: 'normal',
+    status: 'done'
   },
   {
     title: 'Study Angular',
     description: 'Watch the class',
-    priority: 'Very important',
-    status: 'Pending'
+    priority: 'important',
+    status: 'pendent'
   },
   {
     title: 'Study Java',
     description: 'Watch the class',
-    priority: 'Urgent',
-    status: 'Pending'
+    priority: 'urgent',
+    status: 'pendent'
   }
 ]
 
