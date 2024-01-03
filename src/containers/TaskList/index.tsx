@@ -1,24 +1,25 @@
 import Task from '../../components/Task'
 import { Container } from './styles'
+import * as enums from '../../utils/enums/Task'
 
 const tasks = [
   {
     title: 'Study Typescript',
     description: 'Watch the class',
-    priority: 'normal',
-    status: 'done'
+    priority: enums.Priority.NORMAL,
+    status: enums.Status.DONE
   },
   {
     title: 'Study Angular',
     description: 'Watch the class',
-    priority: 'important',
-    status: 'pendent'
+    priority: enums.Priority.IMPORTANT,
+    status: enums.Status.PENDENT
   },
   {
     title: 'Study Java',
     description: 'Watch the class',
-    priority: 'urgent',
-    status: 'pendent'
+    priority: enums.Priority.URGENT,
+    status: enums.Status.PENDENT
   }
 ]
 
