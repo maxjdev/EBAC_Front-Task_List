@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import GlobalStyle, { Container } from './styles'
 import store from './store'
 import Home from './pages/Home'
+import SignUp from './pages/SignUp'
 
 const routes = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/new',
-    element: <h1>teste</h1>
+    element: <SignUp />
   }
 ])
 
