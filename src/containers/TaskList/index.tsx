@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux'
 import Task from '../../components/Task'
-import { Container } from './styles'
+import { Container, Result } from './styles'
 import { RootReducer } from '../../store'
-import { Priority } from '../../utils/enums/Task'
 
 const TaskList = () => {
   const { itens } = useSelector((state: RootReducer) => state.tasks)
@@ -28,16 +27,28 @@ const TaskList = () => {
     }
   }
 
+  const seeFilteringResult = (amount: number) => {
+    let message = ''
+    const complement =
+      term !== undefined && term.length > 0 ? `and "${term}"` : ''
+
+    if (rate === 'all') {
+      message = `${amount} task(s) found as: all ${complement}`
+    } else {
+      message = `${amount} task(s) found as: "${`${rate}=${val}`}" ${complement}`
+    }
+
+    return message
+  }
+
+  const tasks = filterTasks()
+  const message = seeFilteringResult(tasks.length)
+
   return (
     <Container>
-      <p>2 tasks marked as: &quot;category&quot; and &quot;{term}&quot;</p>
+      <Result>{message}</Result>
       <ul>
-        <li>{term}</li>
-        <li>{rate}</li>
-        <li>{val}</li>
-      </ul>
-      <ul>
-        {filterTasks().map((t) => (
+        {tasks.map((t) => (
           <li key={t.title}>
             <Task
               id={t.id}
