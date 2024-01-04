@@ -5,6 +5,7 @@ import { RootReducer } from '../../store'
 
 const TaskList = () => {
   const { itens } = useSelector((state: RootReducer) => state.tasks)
+  const { term } = useSelector((state: RootReducer) => state.filter)
 
   return (
     <Container>
