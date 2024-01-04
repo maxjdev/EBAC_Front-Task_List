@@ -75,10 +75,6 @@ export const Button = styled.button`
   margin-right: 8px;
 `
 
-export const ButtonSave = styled(Button)`
-  background-color: ${vars.green};
-`
-
 export const ButtonCancelRemove = styled(Button)`
   background-color: ${vars.red};
 `
