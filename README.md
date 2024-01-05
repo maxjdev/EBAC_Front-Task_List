@@ -2,7 +2,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="90px">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="90px">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="90px"><br><br>
-  <h1>Project: Task List <a href="">Deploy</a></h1>
+  <h1>Project: Task List <a href="https://ebac-front-task-list.vercel.app/">Deploy</a></h1>
 </div>
 
 ## Description
