@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 type Props = {
-  active: boolean
+  active?: boolean
 }
 
 export const Card = styled.div<Props>`
