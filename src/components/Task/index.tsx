@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import * as S from './styles'
 import { remove, edit, editStatus } from '../../store/reducers/tasks'
 import TaskClass from '../../models/Task'
-import { ButtonSave } from '../../styles'
+import { Button, ButtonSave } from '../../styles'
 import * as enums from '../../utils/enums/Task'
 
 type Props = TaskClass
@@ -89,7 +89,7 @@ const Task = ({
           </>
         ) : (
           <>
-            <S.Button onClick={() => setIsEditing(true)}>Edit</S.Button>
+            <Button onClick={() => setIsEditing(true)}>Edit</Button>
             <S.ButtonCancelRemove onClick={() => dispatch(remove(id))}>
               Remove
             </S.ButtonCancelRemove>
